@@ -16,6 +16,7 @@ fs.writeFile("file.txt", "Hello World!", function (err) {
   console.log("File saved!");
 });
 // ============================================================================================
+
 http
   .createServer(function (req, res) {
     res.writeHead(200, { "Content-Type": "text/html" });
@@ -23,6 +24,7 @@ http
     res.end();
   })
   .listen(8080);
+
 
 https
   .get("https://jsonplaceholder.typicode.com/posts/1", (resp) => {
@@ -68,3 +70,4 @@ async function myFunction() {
 }
 
 myFunction();
+
